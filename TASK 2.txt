@@ -1,0 +1,26 @@
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a,b;
+    cout<<"enter the two numbers for opertaion you want to perform"<<endl;
+    cin>>a;
+    cin>>b;
+    char c;
+    cout<<" enter the operator "<<endl;
+    cin>>c;
+    if(c=='+'){
+        cout<<"the answer is "<<a+b<<endl;
+    }
+    else if(c=='-'){
+        cout<<"the answer is "<<a-b<<endl;
+    }
+    else if(c=='*'){
+        cout<<"the answer is "<<a*b<<endl;
+    }
+    else if(c=='/'){
+        cout<<"the answer is "<<a/b<<endl;
+    }
+
+    return 0;
+}

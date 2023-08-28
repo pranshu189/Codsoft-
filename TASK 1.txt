@@ -1,0 +1,33 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+int main()
+{
+	int number;
+	int guess; 
+	int tries = 0;
+	srand(time(0));
+	number = rand() % 10; 
+	cout << "Guess My Number Game\n";
+
+	while(1){
+		cout << "Enter a guess between 1 and 10  ";
+		cin >> guess;
+		tries++;
+
+		if (guess == number){
+			cout << "\nCongratulations its Correct!\nYou got it in " << tries << " guesses!\n";
+			break;
+		}
+		else if (guess < number){
+			cout << "Too low!\n";
+		}
+		else{
+			cout << "\nToo high\n";
+		}
+	}
+
+	return 0;
+}
